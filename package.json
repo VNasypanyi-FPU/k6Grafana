@@ -1,0 +1,13 @@
+{
+  "name": "complex-scenarios",
+  "version": "1.0.0",
+  "description": "This is a sample repository for demonstration of running concurrent scenarios and organizing folder structure.",
+  "scripts": {
+    "spring-petclinic.load-test": "k6 run \"%cd%/simulations/spring-petclinic/load-test.js\"",
+    "spring-petclinic.load-test.prom": "k6 run -o experimental-prometheus-rw \"%cd%/simulations/spring-petclinic/load-test.js\"",
+    "spring-petclinic.other-test": "k6 run \"%cd%/simulations/spring-petclinic/other-test.js\"",
+    "other-app.some-test": "k6 run \"%cd%/simulations/other-app/some-test.js\""
+  },
+  "author": "vadim",
+  "license": "ISC"
+}
